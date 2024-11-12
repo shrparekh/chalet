@@ -411,8 +411,9 @@ ul {
   height: 50px;
   background: var(--aports-base);
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 70px;
+  right: 3px;
+
   z-index: 99;
   text-align: center;
   -webkit-transition: all 0.4s ease;
@@ -665,7 +666,7 @@ ul {
 }
 
 .stricky-header.main-menu {
-  background-color: var(--aports-black);
+  background-color: #D7B267;
 }
 
 
@@ -951,7 +952,7 @@ ul {
   cursor: pointer;
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #fff;
+  color: black;
 }
 
 .main-menu .mobile-nav__toggler:hover {
@@ -1305,7 +1306,10 @@ ul {
 .main-menu-two__logo {
   position: relative;
   display: block;
-  padding: 24.5px 0;
+  padding: 10px 0;
+}
+.main-menu-two__logo  img{
+  height: 90px;
 }
 
 .main-menu-two__main-menu-box {
@@ -1652,8 +1656,8 @@ ul {
 
 .main-slider .container {
   position: relative;
-  padding-top: 300px;
-  padding-bottom: 215px;
+  padding-top: 200px;
+  padding-bottom: 203px;
   z-index: 30;
 }
 
@@ -7200,11 +7204,13 @@ ul {
   position: relative;
   display: block;
   margin: 0 30px;
-  background-color:#D7B267;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: white;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 80px 170px 80px;
   z-index: 1;
-  border: 3px solid black;
+  border-radius: 20px;
+ 
 }
 
 .contact-three__form-box {
@@ -7232,22 +7238,22 @@ ul {
   height: 50px;
   width: 100%;
   border: none;
-  background-color: #31478F;
+  background-color:rgb(252, 253, 178);
   padding-left: 30px;
   padding-right: 30px;
   outline: none;
   font-size: 16px;
-  color: white;
+  color: black;
   display: block;
   font-weight: 400;
 }
 
 .contact-form__input-box textarea {
   font-size: 16px;
-  color: white;
+  color: black;
   height: 170px;
   width: 100%;
-  background-color:#31478F;
+  background-color:rgb(252, 253, 178);
   padding: 15px 30px 30px;
   border: none;
   outline: none;
@@ -7719,7 +7725,7 @@ ul {
   transition: all 0.4s linear;
   z-index: -1;
   border-radius: 20px;
-  border: 5px solid #31478F;
+  
 }
 
 .feature-three__single:hover:before {
@@ -8305,7 +8311,7 @@ ul {
   justify-content: space-between;
   background-color: #ffffff;               /* White background for each tab */
   padding: 15px 20px;                      /* Space inside each tab */
-  border: 2px solid transparent;           /* Start with transparent border */
+  border: 2px solid white;           /* Start with transparent border */
   border-radius: 5px;                      /* Rounded corners */
   margin-bottom: 10px;                     /* Space between tabs */
   transition: all 0.3s ease;               /* Smooth transition for hover effects */
@@ -8315,15 +8321,15 @@ ul {
 /* Tab hover and active styles */
 .tab-buttons .tab-btn:hover {
   background-color: #D7B267;               /* Highlight color on hover */
-  border-color: #D7B267;                   /* Border color on hover */
+  border-color: white;                   /* Border color on hover */
   color: #ffffff;                          /* Text color on hover */
   transform: translateX(5px);              /* Slide effect */
 }
 
 .tab-buttons .tab-btn.active-btn {
-  background-color:#D7B267;               /* Active tab background */
+  background-color:white;               /* Active tab background */
   color: #ffffff;                          /* Active tab text color */
-  border-color: #D7B267;                   /* Active tab border */
+  border-color: white;                   /* Active tab border */
 }
 
 /* Arrow icon animation */
@@ -8447,9 +8453,7 @@ ul {
   }
 }
 
-.active-card {
-  animation: pulse 1s infinite;
-}
+
 
 
 
@@ -8568,25 +8572,245 @@ ul {
     height: 490px;
 } 
 }
-.main-menu .mobile-nav__toggler
 
 
+ /* Carousel Navigation Buttons at the Bottom */
+.feature-carousel .owl-nav {
+  position: absolute;
+  bottom: -15px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
 
-.owl-carousel .owl-nav button.owl-next{
-  font-size: 200px !important;
-  color: #31478F !important;
- 
-  
+.feature-carousel .owl-nav button {
+  background-color:#D7B267 !important; 
+  color: #fff !important; 
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px !important;
+  cursor: pointer;
+  margin: 0 10px; /* Spacing between buttons */
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+.feature-carousel .owl-nav button:hover {
+  background-color:#31478F !important; 
 }
 
 
 
- .owl-carousel .owl-nav button.owl-prev{
-  font-size: 200px !important;
-  color: #31478F !important;
-  
-  
- }
- .owl_nav{
-  text-align: center !important;
- }
+.sticky-buttons {
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+
+}
+
+.sticky-buttons a {
+  padding: 10px 20px;
+  background-color: #31478F; /* Dark red color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.sticky-buttons :hover{
+ background-color:#D7B267;
+}
+.sticky-buttons a span{
+  display: none;
+}
+/* Hide WhatsApp button on desktop */
+.whatsapp-btn {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .sticky-buttons {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff; /* Background color for mobile */
+    border-top: 1px solid #ccc; /* Border for separation */
+    z-index: 2;
+    font-size: 15px;
+  }
+  .sticky-buttons a {
+    flex: 1;
+    padding: 10px 5px;
+  }
+  .sticky-buttons a span{
+    display: inline-block;
+    padding-left: 5px;
+  }
+  /* Show WhatsApp button on mobile */
+  .whatsapp-btn {
+    display: inline-block;
+  }
+}
+@media (max-width: 370px) {
+  .sticky-buttons {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff; /* Background color for mobile */
+    border-top: 1px solid #ccc; /* Border for separation */
+    z-index: 2;
+    font-size: 12px;
+  }
+
+  .sticky-buttons span{
+    font-size: 10px;
+    padding-left: 5px;
+  }
+}
+
+
+
+
+/* Custom Styles */
+.modal-content {
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  border: 3px solid black; /* Border */
+  position: relative; /* For overlay */
+  overflow: hidden; /* Ensure children don’t overflow */
+}
+
+.modal-header {
+  background: linear-gradient(to right, #31478F, #D7B267); /* Gradient background */
+  color: white; /* Text color */
+  border-top-left-radius: 15px; /* Match rounded corners */
+  border-top-right-radius: 15px; /* Match rounded corners */
+  padding: 1rem; /* Padding for header */
+}
+
+.modal-body {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  border-radius: 0 0 15px 15px; /* Match rounded corners at the bottom */
+  animation: fadeIn 0.3s; /* Animation for opening */
+}
+
+.modal-footer {
+  border: none; /* Remove border */
+}
+
+.form-label {
+  font-weight: bold; /* Bold labels */
+}
+
+.form-control {
+  border-radius: 10px; /* Rounded input fields */
+  border: 2px solid #31478F; /* Custom border color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.form-control:focus {
+  border-color: #D7B267; /* Focus border color */
+  box-shadow: 0 0 5px rgba(215, 178, 103, 0.5); /* Focus shadow effect */
+}
+
+.thm-btn {
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.thm-btn:hover {
+  background-color: #218838; /* Darker on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Background for Modal */
+
+
+
+
+
+
+
+
+
+
+
+/* General Card Styling */
+.feature-three__single {
+  background: #ffffff; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+ 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Default shadow */
+  position: relative; /* For pseudo-elements */
+  opacity: 0; /* Initial opacity for entrance animation */
+  transform: scale(0.8); /* Start smaller */
+  animation: fadeInUp 0.6s forwards; /* Entrance animation */
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
+
+/* Hover Effect */
+.feature-three__single:hover {
+  transform: scale(1.05); /* Slightly grow on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Increased shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Tilt Effect on Hover */
+.feature-three__single:hover {
+  transform: scale(1.05) rotate(2deg); /* Tilt and grow */
+}
+
+/* Icon Animation */
+.feature-three__icon {
+  transition: transform 0.3s ease; /* Transition for icon */
+}
+
+.feature-three__single:hover .feature-three__icon {
+  transform: scale(1.2) rotate(-10deg); /* Bounce effect on icon */
+}
+
+/* Sequential Animation Delay */
+.feature-three__single:nth-child(1) { animation-delay: 0.1s; }
+.feature-three__single:nth-child(2) { animation-delay: 0.2s; }
+.feature-three__single:nth-child(3) { animation-delay: 0.3s; }
+.feature-three__single:nth-child(4) { animation-delay: 0.4s; }
+.feature-three__single:nth-child(5) { animation-delay: 0.5s; }
+.feature-three__single:nth-child(6) { animation-delay: 0.6s; }
