@@ -237,10 +237,10 @@
         margin-top: 0;
         padding: 120px 0 110px;
     }
-
+/* 
     .feature-one__left {
         max-width: 405px;
-    }
+    } */
 
     .feature-one__right {
         margin-right: 0;
@@ -523,9 +523,9 @@
         max-width: 100%;
     }
 
-    .feature-one__left {
+    /* .feature-one__left {
         max-width: 320px;
-    }
+    } */
 
     .feature-one__text br {
         display: none;
