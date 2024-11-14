@@ -193,7 +193,7 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  border: 1px solid var(--aports-base);
+  border: 1px solid #31478F;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   position: fixed;
@@ -209,7 +209,7 @@ ul {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: var(--aports-base);
+  background-color: #31478F;
   opacity: .3;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
