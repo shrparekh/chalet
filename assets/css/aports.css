@@ -8824,13 +8824,15 @@ ul {
 }
 
 .modal-header {
-  background: linear-gradient(to right, #31478F, #D7B267); /* Gradient background */
+  background: linear-gradient(to right,  #D7B267, #31478F); /* Gradient background */
   color: white; /* Text color */
   border-top-left-radius: 15px; /* Match rounded corners */
   border-top-right-radius: 15px; /* Match rounded corners */
   padding: 1rem; /* Padding for header */
 }
-
+.modal-content .modal-header img{
+  height: 100px !important;
+}
 .modal-body {
   background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect for background */
