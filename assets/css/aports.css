@@ -740,10 +740,10 @@ ul {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Adjust to control distance from the text */
+  bottom: -5px; /* Distance from the text */
   width: 0;
   height: 2px;
-  background-color: #31478F; /* Match active color */
+  background-color: #31478F; /* Color of the underline */
   transition: width 500ms ease;
 }
 
@@ -1039,7 +1039,9 @@ ul {
 
 .mobile-nav__content {
   width: 300px;
-  background-color: var(--aports-black);
+  /* background-color: var(--aports-black); */
+  background-color: #D7B267;
+  color: #000;
   z-index: 10;
   position: relative;
   height: 100%;
@@ -1060,6 +1062,7 @@ ul {
 
 .mobile-nav__wrapper.expanded .mobile-nav__content {
   opacity: 1;
+  color: #000;
   visibility: visible;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -1091,6 +1094,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  color: #000;
 }
 
 .mobile-nav__content .main-menu__list>li>ul,

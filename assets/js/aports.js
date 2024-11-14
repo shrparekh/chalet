@@ -26,16 +26,17 @@
     navLinks.forEach((link) => {
       link.parentElement.classList.remove("current");
     });
-    document.querySelector(".main-menu__list > li > a[href='#']").parentElement.classList.add("current");
+    document.querySelector(".main-menu__list > li > a[href='index.html']").parentElement.classList.add("current");
   
-    window.addEventListener("scroll", () => {
+    // Function to handle active link based on scroll position
+    function updateActiveLink() {
       let current = "";
   
       // Check which section is in view
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
           current = section.getAttribute("id");
         }
       });
@@ -54,8 +55,14 @@
           link.parentElement.classList.add("current");
         }
       });
-    });
+    }
+  
+    // Update active link on scroll and on load
+    window.addEventListener("scroll", updateActiveLink);
+    updateActiveLink(); // Run on page load to set the correct initial link
   });
+  
+  
   
   
 
