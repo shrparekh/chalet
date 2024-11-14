@@ -2199,6 +2199,8 @@ ul {
 
 .about-one__img-one img {
   width: 100%;
+  border: 3px solid black;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
 .about-one__img-two {
@@ -2310,6 +2312,7 @@ ul {
   width: 100%;
   margin-left: auto;
   padding: 40px 0px 0px;
+  border: 3px solid black;
 }
 
 .counter-one__list {
@@ -4195,6 +4198,8 @@ ul {
 
 .about-two__img-one img {
   width: 100%;
+    border: 3px solid black;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09);
 }
 
 .about-two__img-two {
@@ -4206,6 +4211,7 @@ ul {
 
 .about-two__img-two img {
   width: auto;
+  border: 3px solid black;
 }
 
 .about-two__right {
