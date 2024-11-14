@@ -17,6 +17,48 @@
 
 
 
+  // navbar active
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".main-menu__list > li > a");
+  
+    // Set "Home" as active on page load
+    navLinks.forEach((link) => {
+      link.parentElement.classList.remove("current");
+    });
+    document.querySelector(".main-menu__list > li > a[href='#']").parentElement.classList.add("current");
+  
+    window.addEventListener("scroll", () => {
+      let current = "";
+  
+      // Check which section is in view
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+  
+      // Remove the current class from all links and add to the active section's link
+      navLinks.forEach((link) => {
+        link.parentElement.classList.remove("current");
+  
+        // If current is empty (top of page), keep "Home" as active
+        if (current === "" && link.getAttribute("href") === "#") {
+          link.parentElement.classList.add("current");
+        }
+  
+        // Otherwise, add current class to the link matching the section in view
+        if (link.getAttribute("href") === `#${current}`) {
+          link.parentElement.classList.add("current");
+        }
+      });
+    });
+  });
+  
+  
+
   function thmOwlInit() {
     // owl slider
 
