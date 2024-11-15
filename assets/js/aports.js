@@ -445,20 +445,45 @@
     });
   }
 
+  // if ($(".img-popup").length) {
+  //   var groups = {};
+  //   $(".img-popup").each(function () {
+  //     var id = parseInt($(this).attr("data-group"), 10);
+
+  //     if (!groups[id]) {
+  //       groups[id] = [];
+  //     }
+
+  //     groups[id].push(this);
+  //   });
+
+  //   $.each(groups, function () {
+  //     $(this).magnificPopup({
+  //       type: "image",
+  //       closeOnContentClick: true,
+  //       closeBtnInside: false,
+  //       gallery: {
+  //         enabled: true
+  //       }
+  //     });
+  //   });
+  // }
   if ($(".img-popup").length) {
     var groups = {};
     $(".img-popup").each(function () {
-      var id = parseInt($(this).attr("data-group"), 10);
-
-      if (!groups[id]) {
-        groups[id] = [];
+      // Use data-group attribute to group images
+      var groupID = $(this).attr("data-group");
+  
+      if (!groups[groupID]) {
+        groups[groupID] = [];
       }
-
-      groups[id].push(this);
+  
+      groups[groupID].push(this);
     });
-
-    $.each(groups, function () {
-      $(this).magnificPopup({
+  
+    // Initialize Magnific Popup for each group
+    $.each(groups, function (groupID, items) {
+      $(items).magnificPopup({
         type: "image",
         closeOnContentClick: true,
         closeBtnInside: false,
@@ -468,6 +493,7 @@
       });
     });
   }
+  
 
   function dynamicCurrentMenuClass(selector) {
     let FileName = window.location.href.split("/").reverse()[0];

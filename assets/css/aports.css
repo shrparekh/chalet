@@ -1310,6 +1310,7 @@ ul {
   width: 100%;
   transition: all 500ms ease;
   z-index: 999;
+  
 }
 
 .main-menu-two__wrapper {
@@ -2728,7 +2729,8 @@ ul {
   transition: all 500ms ease;
   text-align: start;
   color: #000;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: start;
 }
 
 .feature-one__btn {
@@ -8817,7 +8819,7 @@ ul {
     padding: 10px 0;
     background-color: #fff; /* Background color for mobile */
     border-top: 1px solid #ccc; /* Border for separation */
-    z-index: 2;
+    z-index: 20;
     font-size: 12px;
   }
 
@@ -9012,9 +9014,18 @@ ul {
   font-weight: 600;
   padding-top: 4px;
 }
-.rera .blink {
-  
-  animation: blink 1s infinite;
+.blink {
+  animation: blink-animation 0.8s infinite;
 }
+
+@keyframes blink-animation {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5;
+  }
+}
+
 
 
