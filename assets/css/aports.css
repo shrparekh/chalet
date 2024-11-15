@@ -2728,6 +2728,7 @@ ul {
   transition: all 500ms ease;
   text-align: start;
   color: #000;
+  text-align: justify;
 }
 
 .feature-one__btn {
@@ -2877,7 +2878,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  border: 1px solid var(--aports-bdr-color);
+  /* border: 1px solid black; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -3487,8 +3488,9 @@ ul {
 
 .contact-one__text-1 {
   /* padding-top: 31px; */
-  padding-bottom: 23px;
+  padding-bottom: 35px;
   color: #000;
+  text-align: justify;
 }
 
 .contact-one__list {
@@ -4221,6 +4223,7 @@ ul {
   right: 190px;
   background-color: var(--aports-primary);
   z-index: -1;
+  display: none;
 }
 
 .about-two__big-text {
@@ -7837,7 +7840,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-color:#D7B267; */
+  background-color:#D7B267;
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;
