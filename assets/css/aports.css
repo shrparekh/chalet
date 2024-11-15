@@ -743,7 +743,7 @@ ul {
   bottom: -5px; /* Distance from the text */
   width: 0;
   height: 2px;
-  background-color: #31478F; /* Color of the underline */
+  background-color: #D7B267; /* Color of the underline */
   transition: width 500ms ease;
 }
 
@@ -763,7 +763,7 @@ ul {
 }
 .stricky-header .main-menu__list>li.current>a,
 .stricky-header .main-menu__list>li:hover>a{
-  color: #fff;
+  color: #D7B267;
 }
 
 .main-menu .main-menu__list>li>ul,
@@ -2352,8 +2352,8 @@ ul {
 .counter-one {
   position: relative;
   display: block;
-  margin-top: -144px;
-  padding: 0 0 110px;
+  /* margin-top: -144px; */
+  padding: 50px 0 110px;
   z-index: 2;
 }
 
@@ -2361,7 +2361,7 @@ ul {
   position: relative;
   display: block;
   background-color: #D7B267;
-  max-width: 870px;
+  /* max-width: 870px; */
   width: 100%;
   margin-left: auto;
   padding: 40px 0px 0px;
@@ -2726,8 +2726,8 @@ ul {
 .feature-one__text {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  text-align: justify;
-  color: #252525;
+  text-align: start;
+  color: #000;
 }
 
 .feature-one__btn {
@@ -2776,7 +2776,8 @@ ul {
 .floor-plan {
   position: relative;
   display: block;
-  padding: 0 0 120px;
+  padding: 100px 0 120px;
+  background-color: #fcfcfc;
 }
 
 .floor-plan .section-title {
@@ -2810,7 +2811,7 @@ ul {
   transition-delay: 0.1s;
   font-size: 12px;
   color: var(--aports-white);
-  background-color: var(--aports-base);
+  background-color: var(--aports-black);
   padding: 10px 40px 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -2818,6 +2819,7 @@ ul {
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 1;
+  border-radius: 10px;
 }
 
 .floor-plan__main-tab-box .tab-buttons .tab-btn.active-btn span {
@@ -2832,9 +2834,10 @@ ul {
   bottom: 0;
   height: 0%;
   content: "";
-  background-color: var(--aports-black);
+  background-color: #31478F;
   transition: all 0.3s ease;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .floor-plan__main-tab-box .tab-buttons .tab-btn.active-btn span:before {
@@ -2876,6 +2879,7 @@ ul {
   align-items: center;
   border: 1px solid var(--aports-bdr-color);
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .floor-plan__tab-content-left {
@@ -2928,7 +2932,7 @@ ul {
 .floor-plan__tab-content-righ {
   position: relative;
   display: block;
-  margin-left: 55px;
+  /* margin-left: 55px; */
 }
 
 .floor-plan__tab-content-righ img {
@@ -3482,8 +3486,9 @@ ul {
 }
 
 .contact-one__text-1 {
-  padding-top: 31px;
+  /* padding-top: 31px; */
   padding-bottom: 23px;
+  color: #000;
 }
 
 .contact-one__list {
@@ -3507,9 +3512,9 @@ ul {
   justify-content: center;
   height: 50px;
   width: 50px;
-  background-color: var(--aports-primary);
+  background-color: var(--aports-bdr-color);
   font-size: 16px;
-  color: var(--aports-base);
+  color: #31478F;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -3527,6 +3532,8 @@ ul {
 
 .contact-one__list li .content p {
   line-height: 16px;
+  color: #000;
+  font-weight: 600;
 }
 
 .contact-one__list li .content h4 {
@@ -3541,7 +3548,7 @@ ul {
 }
 
 .contact-one__list li .content h4 a {
-  color: var(--aports-black);
+  color: #31478F;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -3564,7 +3571,7 @@ ul {
   position: relative;
   display: block;
   padding: 100px 100px 100px;
-  background-color: var(--aports-primary);
+  background-color: var(--aports-bdr-color);
 }
 
 .contact-one__form {
@@ -5143,7 +5150,8 @@ ul {
 .gallery-two__single {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  margin: 10px;
 }
 
 .gallery-two__img {
@@ -5152,6 +5160,7 @@ ul {
   overflow: hidden;
   z-index: 1;
   border: 2px solid #000;
+  /* border-radius: 20px; */
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
  
 }
@@ -5165,6 +5174,7 @@ ul {
   right: 0;
   background-color: #D7B267;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  /* border-radius: 20px; */
   opacity: 0;
   visibility: hidden;
   -webkit-transform-origin: top center;
@@ -5552,15 +5562,15 @@ ul {
 .floor-plan-two__main-tab-box .tab-buttons {
   position: relative;
   display: block;
-  background-color: #31478F;
-  padding: 34px 30px 33px;
+  /* background-color: #31478F; */
+  padding: 10px 30px 33px;
   height: 402px;
   margin-top: 10px;
   border-radius: 10px;
   border: 4px solid white;
 }
 
-.floor-plan-two__main-tab-box .tab-buttons .tab-btn {
+/* .floor-plan-two__main-tab-box .tab-buttons .tab-btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -5570,6 +5580,7 @@ ul {
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  border: 2px solid #D7B267;
 }
 
 .floor-plan-two__main-tab-box .tab-buttons .tab-btn:hover,
@@ -5608,7 +5619,7 @@ ul {
   transition: all 0.3s ease;
   z-index: 1;
   font-weight: 800;
-}
+} */
 
 .floor-plan-two__main-tab-box .tabs-content {
   position: relative;
@@ -7826,7 +7837,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color:#D7B267;
+  /* background-color:#D7B267; */
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;
@@ -8353,7 +8364,7 @@ ul {
 
 
 
-
+/* 
 
 .tab-btn {
   display: flex;
@@ -8370,31 +8381,30 @@ ul {
 }
 
 .tab-btn:hover {
-  transform: scale(1.05);            /* Slightly scale up on hover */
-  background-color: #e0e0e0;         /* Background change on hover */
+  transform: scale(1.05);            
+  background-color: #e0e0e0;         
   color: #000;
 }
 
 .tab-btn i.icon-right-arrow {
   opacity: 0;
-  transition: opacity 0.3s ease;    /* Fade in the icon */
+  transition: opacity 0.3s ease;    
   margin-left: 10px;
 }
 
 .tab-btn:hover i.icon-right-arrow {
   opacity: 1;
-  transform: translateX(5px);       /* Slide arrow on hover */
+  transform: translateX(5px);       
 }
 
 .tab-btn.active-btn {
-  background-color: #d1ecf1;         /* Active tab styling */
+  background-color: #d1ecf1;         
   color: #0c5460;
 }
 
 .tab-btn.active-btn i.icon-right-arrow {
   opacity: 1;
-  transform: translateX(5px);        /* Show arrow on active tab */
-}
+  transform: translateX(5px);        
 
 
 
@@ -8424,52 +8434,54 @@ ul {
 
 /* Base styles for the tab list container */
 .floor-plan-two__left {
-  background-color: #f5f5f5;              /* Light background */
+  background-color: #fff;
+  border: 2px solid #0056b3;            
   padding: 20px;                          /* Padding for spacing */
   border-radius: 10px;                    /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  height: 450px;
 }
 
 /* Tab buttons with animations */
-.tab-buttons .tab-btn {
+/* .tab-buttons .tab-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;               /* White background for each tab */
-  padding: 15px 20px;                      /* Space inside each tab */
-  border: 2px solid white;           /* Start with transparent border */
-  border-radius: 5px;                      /* Rounded corners */
-  margin-bottom: 10px;                     /* Space between tabs */
-  transition: all 0.3s ease;               /* Smooth transition for hover effects */
+  background-color: #ffffff;               
+  padding: 15px 20px;                 
+  border: 2px solid white;           
+  border-radius: 5px;                     
+  margin-bottom: 10px;                     
+  transition: all 0.3s ease;               
   cursor: pointer;
-}
+} */
 
 /* Tab hover and active styles */
-.tab-buttons .tab-btn:hover {
-  background-color: #D7B267;               /* Highlight color on hover */
-  border-color: white;                   /* Border color on hover */
-  color: #ffffff;                          /* Text color on hover */
-  transform: translateX(5px);              /* Slide effect */
+/* .tab-buttons .tab-btn:hover {
+  background-color: #D7B267;            
+  border-color: white;                  
+  color: #ffffff;                         
+  transform: translateX(5px);           
 }
 
 .tab-buttons .tab-btn.active-btn {
-  background-color:white;               /* Active tab background */
-  color: #ffffff;                          /* Active tab text color */
-  border-color: white;                   /* Active tab border */
-}
+  background-color:white;               
+  color: #ffffff;                          
+  border-color: white;                  
+} */
 
 /* Arrow icon animation */
-.tab-buttons .tab-btn i {
+/* .tab-buttons .tab-btn i {
   font-size: 16px;
-  transition: transform 0.3s ease;         /* Rotate arrow smoothly */
+  transition: transform 0.3s ease;        
 }
 
 .tab-buttons .tab-btn:hover i {
-  transform: rotate(90deg);                /* Rotate arrow on hover */
-}
+  transform: rotate(90deg);               
+} */
 
 /* Ripple effect on click */
-.tab-buttons .tab-btn:active {
+/* .tab-buttons .tab-btn:active {
   position: relative;
   overflow: hidden;
 }
@@ -8482,7 +8494,7 @@ ul {
   border-radius: 50%;
   animation: ripple 0.6s linear;
   z-index: 1;
-}
+} */
 
 /* Ripple animation */
 @keyframes ripple {
@@ -8662,15 +8674,15 @@ ul {
   .floor-plan-two__main-tab-box .tab-buttons {
     position: relative;
     display: block;
-    background-color: #31478F;
-    padding: 34px 30px 33px;
+    /* background-color: #31478F; */
+    /* padding: 34px 30px 33px; */
     height: 420px;
     margin-top: 10px;
     border-radius: 10px;
     border: 4px solid white;
   }
   .floor-plan-two__left {
-    background: rgb(0,0,0,0.8);
+    /* background: rgb(0,0,0,0.8); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -8684,15 +8696,15 @@ ul {
   .floor-plan-two__main-tab-box .tab-buttons {
     position: relative;
     display: block;
-    background-color: #31478F;
-    padding: 34px 30px 33px;
+    /* background-color: #31478F; */
+    /* padding: 34px 30px 33px; */
     height: 433px;
     margin-top: 10px;
     border-radius: 10px;
     border: 4px solid white;
   }
   .floor-plan-two__left {
-    background: rgb(0,0,0,0.8);
+    /* background: rgb(0,0,0,0.8); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -8741,7 +8753,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 2;
+  z-index: 20;
 
 }
 
@@ -8776,7 +8788,7 @@ ul {
     padding: 10px 0;
     background-color: #fff; /* Background color for mobile */
     border-top: 1px solid #ccc; /* Border for separation */
-    z-index: 2;
+    z-index: 20;
     font-size: 15px;
   }
   .sticky-buttons a {
@@ -9003,6 +9015,3 @@ ul {
 }
 
 
-.IMGHEIGHT{
- 
-}
